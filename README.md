@@ -1,3 +1,3 @@
 # ez-menu
-A flask web application that utilizes user input (desired caloric intake, cuisine, ingredients used, time needed to prepare the dish) to generate a list of foods recommended (utilizing external API). 
-
+A Flask web application that utilizes a search queue for a dish or ingredient to generate detailed nutrition facts utilizing the CalorieNinjas API.
+Demo Link: https://ez-menu.herokuapp.com/
