@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+  </head>
+<h1>Welcome to EZ-Menu, where you can search for nutrition facts!</h1>
+<h2>Please answer the following question. An answer is required.</h2>
+<form method="post">
+  {{form.hidden_tag()}}
+  {{form.main_dish.label}}{{form.main_dish}}
+  <br>
+  {{form.submit()}}
+
+</form>
+</html>

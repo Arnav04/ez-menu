@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nutrition Info</title>
+  </head>
+{% block body %}
+<h1 style="text-align: center"> Nutrition Information: </h1>
+<h2>No results will show if there is no available information</h2>
+      {% if info %}
+      {% for x in info['items'] %}
+      <div>
+          <ul style="list-style: none;"
+          <br>
+              <h3 class="mt-0 mb-1">{{ x['name'] }} </h3>
+              Sugar (in grams): {{ x['sugar_g'] }} <br>
+              Fiber (in grams): {{ x['fiber_g']}} <br>
+              Serving Size (in grams): {{x['serving_size_g']}} <br>
+              Sodium (in milligrams): {{x['sodium_mg']}} <br>
+              Potassium (in milligrams): {{x['potassium_mg']}} <br>
+              Fat Saturated (in grams): {{x['fat_saturated_g']}} <br>
+              Total Fat (in grams): {{x['fat_total_g']}} <br>
+              Calories: {{x['calories']}} <br>
+              Cholestrol (in grams): {{x['cholestrol_mg']}} <br>
+              Protein (in grams): {{x['protein_g']}} <br>
+              Total Carbohydrates (in grams): {{x['carbohydrates_total_g']}} <br>
+          <br>
+          </ul>
+      </div>
+      {% endfor %}
+      {% endif %}
+  </ul>
+</div >
+{% endblock %}
+</html>
