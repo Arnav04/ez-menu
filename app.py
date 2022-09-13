@@ -22,9 +22,11 @@ db = SQLAlchemy(app)
 
 url = "https://calorieninjas.p.rapidapi.com/v1/nutrition"
 headers = {
-	"X-RapidAPI-Key": "API-KEY-VALUE",
+	"X-RapidAPI-Key": "API-KEY",
 	"X-RapidAPI-Host": "calorieninjas.p.rapidapi.com"
 }
+
+
 
 
 ###################################################
