@@ -35,7 +35,7 @@ headers = {
 
 class InfoForm(FlaskForm):
 
-    main_dish = StringField(("What dish or ingredient would you like to find the nutritional value of? "), validators=[DataRequired()])
+    main_dish = StringField(("What dish, drink, or ingredient would you like to find the nutritional value of? "), validators=[DataRequired()])
     submit = SubmitField('Submit')
 
 @app.route('/', methods=['GET', 'POST'])
